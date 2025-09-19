@@ -1,2 +1,10 @@
 1. Create git repo and clone it in local
 2. Create code.py and code to it
+3. Do git add commit -push before Initi dvc
+4. Now we do 'dvc init' (Create .dvcignore,.dvc)
+5. Now do "mkdir S#"(just to create s# directory -you can named any)
+6. Now we do "dvc remote add -d myremote S#"
+7. Next "dvc add data/"
+   Now it wil ask to do :("git rm -r -cached 'data'" and "git commit -m 'Stop tracking data'")
+   Because initially we were tracking data/folder from git so now we remote it for DVC to handle.
+8. Again we do "dvc add data/" (create data.dvc) then "git add .gitignore data.dvc".
