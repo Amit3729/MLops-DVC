@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 data = {'Name':['Alice','Jhon','Bob'],
-        'Age':[2,.45,34],
+        'Age':[20,45,34],
         'city':['Kathmandu','Dhangadhi','Pokhara']}
 
 df = pd.DataFrame(data)
@@ -11,6 +11,9 @@ df = pd.DataFrame(data)
 new_row_loc = {'Name': 'Gf1','Age':20,'city':'Chitwan'}
 df.loc[len(df.index)] = new_row_loc
 
+#Adding new row to df for v3
+new_row_loc2 = {'Name':'Gf2','Age':22,'city':'Nepalgunj'}
+df.loc[len(df.index)] = new_row_loc2
 
 
 data_dir = 'data'
